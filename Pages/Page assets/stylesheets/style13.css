@@ -73,6 +73,10 @@ nav{
     padding: 5px;
     padding-left: 25px;
 }
+.country li a{
+    text-decoration: none;
+    cursor:default;
+}
 .home{
     background-color: navy;
     color: rgb(200, 250, 250);
