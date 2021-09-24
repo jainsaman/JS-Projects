@@ -17,6 +17,7 @@
 }
 body{
     background-color: var(--bg1);
+    height: 100vh;
 }
 nav{
     height: 10vh;

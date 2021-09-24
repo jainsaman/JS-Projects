@@ -1,4 +1,9 @@
 // api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+var bodyH = document.querySelector("body");
+
+window.addEventListener("scroll", ()=>{
+    bodyH.style.height = `${window.scrollY+window.innerHeight}px`;
+});
 const weatherApi = {
     key: "02c3269e35c84ce6e2352d44a2285289",
     baseUrl: "api.openweathermap.org/data/2.5/weather"

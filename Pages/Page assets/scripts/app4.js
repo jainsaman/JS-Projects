@@ -21,7 +21,11 @@ const reviews = [
         info: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime fugiat quo laboriosam praesentium eum optio?",
     },
 ];
+var bodyH = document.querySelector("body");
 
+window.addEventListener("scroll", ()=>{
+    bodyH.style.height = `${window.scrollY+window.innerHeight}px`;
+});
 const img = document.getElementById('person-img');
 const author = document.getElementById('name');
 const job = document.getElementById('job');

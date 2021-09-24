@@ -1,6 +1,10 @@
 const btn = document.querySelector(".btn");
 const quote = document.getElementById('quote');
+var bodyH = document.querySelector("body");
 
+window.addEventListener("scroll", ()=>{
+    bodyH.style.height = `${window.scrollY+window.innerHeight}px`;
+});
 const quotes = [
     {
         id: 1,

@@ -15,6 +15,7 @@
 body{
     background-color: var(--dark);
     font-family: var(--fGlobal);
+    height: 100vh;
 }
 nav{
     height: 10vh;

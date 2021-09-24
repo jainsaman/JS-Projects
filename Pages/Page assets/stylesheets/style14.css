@@ -17,6 +17,7 @@ body{
     font-family: var(--fGlobal);
     background-color: var(--blue);
     position: relative;
+    height: 100vh;
 }
 nav{
     display: flex;

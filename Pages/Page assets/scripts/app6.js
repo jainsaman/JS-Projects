@@ -4,7 +4,11 @@ const minute = document.getElementById('minute');
 const second = document.getElementById('second');
 
 const newYear = "1 Jan 2022";
+var bodyH = document.querySelector("body");
 
+window.addEventListener("scroll", ()=>{
+    bodyH.style.height = `${window.scrollY+window.innerHeight}px`;
+});
 function timer(){
     const newYrDate = new Date(newYear);
     const currentDate = new Date();

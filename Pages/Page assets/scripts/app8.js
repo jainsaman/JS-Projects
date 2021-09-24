@@ -1,7 +1,11 @@
 const addToDo = document.getElementById('addToDo');
 const ToDoContainer = document.getElementById('ToDoContainer');
 const inputField = document.getElementById('inputField');
+var bodyH = document.querySelector("body");
 
+window.addEventListener("scroll", ()=>{
+    bodyH.style.height = `${window.scrollY+window.innerHeight}px`;
+});
 addToDo.addEventListener('click', ()=>{
     ToDoContainer.style.display = "block";
     var task = document.createElement('p');

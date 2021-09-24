@@ -1,7 +1,11 @@
 const display = document.getElementById('display');
 const buttons = Array.from(document.getElementsByClassName("button"));
 const error = document.querySelector(".error");
+var bodyH = document.querySelector("body");
 
+window.addEventListener("scroll", ()=>{
+    bodyH.style.height = `${window.scrollY+window.innerHeight}px`;
+});
 buttons.map( button => {
     button.addEventListener('click', (e) => {
         switch(e.target.innerText){

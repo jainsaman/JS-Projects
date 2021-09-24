@@ -16,6 +16,7 @@ body{
     background-color: var(--light);
     color: var(--dark);
     font-family: var(--fGlobal);
+    height: 100vh;
 }
 nav{
     width: 100%;
