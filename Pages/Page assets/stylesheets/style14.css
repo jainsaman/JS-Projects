@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --dark: #2d2d2d;
+    --light: #f3f3f3;
+    --blue: #e6f0ff;
+    --dBlue: #3273d2;
+    --fGlobal: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fGlobal);
+    background-color: var(--blue);
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--dark);
+    box-shadow: 0 0 6px #2d2d2d30;
+}
+.main{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.slideContainer{
+    border: 5px solid var(--dBlue);
+    width: 50vw;
+    height: 70vh;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+.slideImg{
+    height: 100%;
+    width: 100%;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnContainer button{
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    color: var(--dBlue);
+    margin: 20px 20px;
+    cursor: pointer;
+}
+.home{
+    background-color: var(--dBlue);
+    color: var(--blue);
+}
+@media screen and (max-width: 768px){
+    .main{
+        justify-content: center;
+    }
+    .slideContainer{
+        height: 40vh;
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 540px){
+    nav{
+        font-size: 32px;
+    }
+    .slideContainer{
+        width: 90vw;
+        height: 30vh;
+    }
+}

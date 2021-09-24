@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Urbanist:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --dark: #1b1f22;
+    --light: #f4f4f4;
+    --bg1: #cbf6ff;
+    --bg2: #e5daff;
+    --blue: #3273d2;
+    --fGlobal: 'Urbanist', sans-serif;
+    --fTitle: 'Questrial', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fGlobal);
+    max-width: 100%;
+    position: relative;
+    height: 100vh;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-shadow: 0 0 4px #1b1f2220;
+    background-color: var(--light);
+    position: fixed;
+    top: 0;
+}
+.navContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--fTitle);
+    color: var(--dark);
+    cursor: pointer;
+}
+nav .logo span{
+    color: var(--blue);
+}
+.navLinks a{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark);
+    padding: 0 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: -5;
+}
+.navLinks a:hover{
+    color: var(--blue);
+}
+.burger{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+.burger .bar{
+    height: 6px;
+    border-radius: 4px;
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    width: 30px;
+    left: 0;
+}
+.burger .bar1{
+    top: 0px;
+}
+.burger .bar2{
+    top: 12px;
+}
+.burger .bar3{
+    top: 24px;
+}
+.burger.open .bar1 , .burger.open .bar3{
+    top: 12px;
+    transform: rotate(45deg);
+}
+.burger.open .bar2{
+    width: 0%;
+    opacity: 0;
+}
+.burger.open .bar3{
+    transform: rotate(-45deg);
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--dark);
+}
+#home{
+    background-color: var(--bg1);
+}
+#about{
+    background-color: var(--bg2);
+}
+.home{
+    background-color: var(--dark);
+    color: var(--blue);
+    font-family: var(--fTitle);
+    font-weight: 600;
+}
+@media screen and (max-width: 768px){
+    nav{
+        padding: 0 12px;
+        background-color: var(--light);
+    }
+    nav .logo{
+        font-size: 28px;
+        background-color: var(--light);
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+    .navLinks{
+        position: absolute;
+        top: -15vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--light);
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        z-index: -5;
+        transition: all 0.6s ease-in-out;
+    }
+    .navLinks a{
+        padding: 18px 12px;
+    }
+    .navContent.navOpen .navLinks{
+        top: 10vh;
+    }
+    .navLinks:focus{
+        color: var(--blue);
+    }
+    .burger{
+        display: block;
+    }
+}

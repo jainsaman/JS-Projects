@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Urbanist:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --light: #f5f5f5;
+    --dark: #1b1f22;
+    --green: #00E175;
+    --fGlobal: 'Questrial', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: var(--fGlobal);
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 4px #1b1f2230;
+    font-size: 44px;
+    font-weight: 800;
+}
+.container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.box{
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 4px #1b1f2230;
+    border-radius: 8px;
+    padding: 50px 50px;
+}
+.counter , .btns{
+    height: 85px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.counter{
+    justify-content: center;
+    box-shadow: 0 0 4px #1b1f2260;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    color: var(--green);
+    font-size: 42px;
+    font-weight: 900;
+}
+.btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px outset #1b1f22;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--fGlobal);
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: all 0.3s ease-in-out;
+}
+#reset{
+    width: 80px;
+    font-size: 20px;
+}
+.btn:hover{
+    box-shadow: inset 0 0 0 18px var(--dark);
+    color: var(--light);
+    font-weight: 500;
+}
+.home{
+    background-color: var(--dark);
+    color: var(--green);
+    font-family: var(--fGlobal);
+    font-weight: 500;
+}

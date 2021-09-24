@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --fTitle: 'Montserrat', sans-serif;
+    --fText: 'Cardo', serif;
+    --dark: #2b2f33;
+    --light: #f3f3f3;
+    --blue: #6eaaff;
+    --dBlue: #3273d2;
+    --yellow: #e6be0a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--light);
+    font-family: var(--fTitle);
+    position: relative;
+    height: 100vh;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 4px #2b2f3380;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--dark);
+}
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 80px;
+}
+.main .title{
+    color: var(--dBlue);
+    font-size: 36px;
+    font-weight: 600;
+    border-bottom: 4px solid var(--yellow);
+    margin-bottom: 40px;
+}
+.categories{
+    width: 100%;
+}
+.btnHolder{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.btn{
+    margin: 0 16px;
+    border: 2px solid var(--yellow);
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-family: var(--fTitle);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--yellow);
+    box-shadow: 1px 1px 2px #2b2f3360;
+    cursor: pointer;
+}
+.btn.active{
+    background-color: var(--yellow);
+    color: var(--light);
+}
+.menuCards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card{
+    width: 50%;
+    height: auto;
+    padding-right: 20px;
+    margin-bottom: 48px;
+    display: none;
+}
+.all , .india , .chin , .ital , .drink{
+    display: flex;
+}
+.card .imgHolder{
+    height: 200px;
+    width: 200px;
+    margin-right: 12px;
+}
+.imgHolder img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid var(--dBlue);
+}
+.cardText{
+    flex: 1;
+}
+.cardTitle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark);
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2b2f3320;
+}
+.cardTitle .price{
+    color: var(--yellow);
+}
+.cardDes{
+    font-family: var(--fText);
+    font-size: 20px;
+    color: var(--dBlue);
+    text-align: justify;
+    padding-top: 16px;
+}
+.home{
+    background-color: var(--dBlue);
+    color: var(--light);
+    font-family: var(--fTitle);
+    font-weight: 500;
+}
+@media screen and (max-width: 768px){
+    nav{
+        font-size: 36px;
+    }
+    .main{
+        padding: 24px 12px;
+    }
+    .main .title{
+        font-size: 28px;
+    }
+    .main .title , .btnHolder{
+        margin-bottom: 28px;
+    }
+    .btn{
+        margin: 4px 4px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .menuCards{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+    .card .imgHolder{
+        height: 120px;
+        width: 120px;
+    }
+    .cardTitle{
+        font-size: 18px;
+    }
+    .cardDes{
+        padding-top: 0;
+        font-size: 16px;
+    }
+}

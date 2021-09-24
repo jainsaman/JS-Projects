@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+    --fGlobal: 'Montserrat', sans-serif;
+    --dark: #1b1f22;
+    --grey: #4b4f55;
+    --light: #f4f4f4;
+    --light2: #646464;
+    --red: #f50a0a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fGlobal);
+    background-color: var(--light);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.main{
+    height: auto;
+    width: 350px;
+    background-color: var(--dark);
+    color: var(--light);
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 25px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 4px #4b4f55;
+}
+.main .title{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+::placeholder{
+    color: var(--grey);
+    opacity: 0.8;
+}
+.input #inputField{
+    width: 220px;
+    height: 40px;
+    padding: 0 4px;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fGlobal);
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--light);
+    color: var(--dark);
+}
+.btn{
+    margin-left: 4px;
+    height: 40px;
+    padding: 0 12px;
+    font-family: var(--fGlobal);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 3px solid var(--grey);
+    color: var(--light);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: inset 0 0 0 20px var(--grey);
+    transition: all 300ms ease-in;
+}
+.ToDo{
+    width: 100%;
+    display: none;
+}
+.taskStyle{
+    font-size: 20px;
+    margin: 4px 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: var(--light2);
+}
+.delTask{
+    background-color: var(--red);
+    padding: 2px 4px;
+    font-size: 16px;
+    color: var(--light);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.home{
+    background-color: var(--grey);
+    color: var(--light);
+    font-family: var(--fGlobal);
+    font-weight: 600;
+}

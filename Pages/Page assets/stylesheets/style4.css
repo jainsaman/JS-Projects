@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Urbanist:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --dark: #1b1f22;
+    --light: #f4f4f4;
+    --bg1: #efffff;
+    --bg2: #e5daff;
+    --blue: #3273d2;
+    --fGlobal: 'Urbanist', sans-serif;
+    --fTitle: 'Questrial', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bg1);
+}
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 4px #1b1f2250;
+    color: var(--dark);
+    font-family: var(--fTitle);
+    font-size: 36px;
+    font-weight: 800;
+}
+.container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 2px #1b1f2250;
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 20px;
+    font-family: var(--fGlobal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 0 6px #1b1f2250;
+}
+.title{
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 4px solid var(--blue);
+    margin-bottom: 24px;
+}
+.cardImg{
+    height: 150px;
+    clip-path: circle(50%);
+    margin-bottom: 20px;
+}
+.cardImg img{
+    height: 100%;
+}
+.name{
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: var(--dark);
+}
+.job{
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.info{
+    text-align: center;
+    color: #1b1f22;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-bottom: 16px;
+}
+.buttons button{
+    background-color: transparent;
+    border: none;
+    padding: 0 20px;
+    color: var(--blue);
+    font-size: 24px;
+}
+.buttons button i{
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+.buttons button i:hover{
+    background-color: var(--blue);
+    color: var(--bg2);
+}
+.home{
+    background-color: var(--blue);
+    color: var(--bg1);
+    font-family: var(--fTitle);
+    font-weight: 500;
+}
+@media screen and (max-width: 540px){
+    .card{
+        width: 320px;
+    }
+}

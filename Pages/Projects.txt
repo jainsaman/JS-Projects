@@ -1,0 +1,16 @@
+Counter
+Color Flipper
+Responsive Navbar (Top)
+Review Carousel
+Calculator
+Countdown Clock
+Lorem Ipsum Generator
+To Do List
+Random Quote Generator
+Weather App
+Restaurant Menu Page
+Scrolling Navbar
+Responsive List with Filter
+Image Slider
+Tic Tac Toe
+Rock Paper Scissors

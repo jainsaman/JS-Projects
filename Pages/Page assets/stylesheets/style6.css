@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --light: #d7e4dc;
+    --dark: #282f2b;
+    --green: #4e7e60;
+    --fGlobal: 'Noto Sans JP', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--dark);
+    font-family: var(--fGlobal);
+}
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 4px #d7e4dc50;
+    color: var(--light);
+    font-size: 40px;
+    font-weight: 500;
+}
+.container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 600px;
+    padding: 50px 50px;
+    background-color: var(--green);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box .title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.box .countdown{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box .countdown .timeBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 125px;
+    height: auto;
+}
+.timeBox .label{
+    font-size: 24px;
+    font-weight: 500;
+}
+.timeBox .time{
+    font-size: 32px;
+    font-weight: 600;
+}
+.home{
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: var(--fGlobal);
+    font-weight: 600;
+}
+@media screen and (max-width:540px){
+    nav{
+        font-size: 36px;
+    }
+    .box{
+        width: 350px;
+        padding: 20px 0;
+    }
+    .box .countdown{
+        flex-direction: column;
+    }
+    .timeBox .label{
+        font-size: 32px;
+    }
+    .timeBox .time{
+        font-size: 40px;
+    }
+}
