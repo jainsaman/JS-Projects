@@ -123,28 +123,57 @@ nav{
 .count{
     color: var(--yellow);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .home{
     background-color: var(--dark);
     color: var(--yellow);
+}
+
+@media screen and (max-width: 760px) {
+    body{
+        max-width: 100%;
+    }
+    nav{
+        font-size: 32px;
+    }
+    .main{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .images{
+        width: 100%;
+    }
+    .selection , .resultHolder{
+        padding: 0 12px;
+    }
+    .player , .computer , .display{
+        font-size: 20px;
+    }
+    .result , .score{
+        font-size: 24px;
+    }
+    .display{
+        width: 150px;
+        height: 48px;
+    }
+}
+@media screen and (max-width: 320px) {
+    nav{
+        font-size: 28px;
+    }
+    .main{
+        padding-top: 20px;
+    }
+    .imgHolder{
+        width: 120px;
+        height: 120px;
+        padding: 30px;
+    }
+    .imgHolder:hover{
+        padding: 35px;
+    }
+    .display{
+        width: 130px;
+        height: 44px;
+        font-size: 18px;
+    }
 }
